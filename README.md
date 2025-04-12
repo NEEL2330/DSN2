@@ -1,1 +1,1 @@
-# Potato-disease-predictor
+# DSN2
