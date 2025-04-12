@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: potato-disease-api
+    env: python
+    rootDir: Potato-disease-predictor/api
+    buildCommand: pip install --upgrade pip && pip install -r requirements.txt && cd ../../potato-disease-frontend1 && npm install && npm run build
+    startCommand: uvicorn main:app --host=0.0.0.0 --port=10000
+    pythonVersion: 3.8.13
