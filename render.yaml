@@ -2,10 +2,13 @@
   - type: web
     name: potato-backend
     env: python
-    buildCommand: pip install -r requirements.txt
+    buildCommand: |
+      mkdir -p .render
+      echo "python-3.8.13" > .render/python-version
+      pip install -r requirements.txt
     startCommand: uvicorn main:app --host=0.0.0.0 --port=10000
     runtime: python
     branch: main
     plan: free
     region: oregon
-    rootDir: api
+    rootDir: Potato-disease-predictor/api
