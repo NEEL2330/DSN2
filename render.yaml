@@ -11,7 +11,7 @@
     branch: main
     plan: free
     region: oregon
-    rootDir: Potato-disease-predictor/api
+    rootDir: api
 
   - type: web
     name: potato-frontend
