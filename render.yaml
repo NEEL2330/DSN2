@@ -2,10 +2,10 @@
   - type: web
     name: potato-backend
     env: python
-    buildCommand: pip install -r Potato-disease-predictor/api/requirements.txt
+    buildCommand: pip install -r api/requirements.txt
     startCommand: uvicorn main:app --host=0.0.0.0 --port=10000
     runtime: python
     branch: main
     plan: free
     region: oregon
-    rootDir: Potato-disease-predictor/api
+    rootDir: api
